@@ -114,27 +114,25 @@ header ul li img {
 /*MENU*/
 
 .menu {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: calc(100% - 50px);
     top: 0; left: 50px;
     background-color: #7A64A6;
     opacity: 0.98;
     z-index: 100;
-    
 }
 
 .menuFilter {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0; left: 0;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     z-index: 50;
     opacity: 1;
-    
 }
 
 /*INDEX*/
