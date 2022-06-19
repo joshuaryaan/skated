@@ -106,7 +106,7 @@ header ul:nth-of-type(even) li {
     margin: 0 0 0 30px;
 }
 
-header ul img {
+header ul li img {
     height: 46px;
     display: block;
 }
@@ -238,7 +238,7 @@ header ul img {
         right: 20px;
     }
     
-    header ul img {
+    header ul li img {
         height: 42px;
     }
     
