@@ -4,7 +4,7 @@ body {
     font-weight: 300;
     font-size: 12px;
     letter-spacing: 0.6px;
-    padding-top: 70px;
+    padding-top: 80px;
     overflow: auto;
 }
 
@@ -73,7 +73,7 @@ a {
 header {
     position: absolute;
     width: 100%;
-    height: 70px;
+    height: 80px;
     top: 0;
     font-size: 13px;
     z-index: 10;
@@ -86,7 +86,7 @@ header ul {
     margin: auto;
     padding: 0;
     list-style: none;
-    left: 40px;
+    left: 20px;
     right: auto;
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ header ul {
 
 header ul:nth-of-type(even) {
     left: auto;
-    right: 40px;
+    right: 20px;
 }
 
 header li {
@@ -107,7 +107,7 @@ header ul:nth-of-type(even) li {
 }
 
 header ul li img {
-    height: 46px;
+    height: 48px;
     display: block;
 }
 
@@ -125,17 +125,17 @@ header ul li img {
 }
 
 .panel.single .hero {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 40px);
     margin: 0 auto;
     overflow: auto;
 }
 
 .panel.single .hero .image {
     position: relative;
-    width: calc(66.66% - 20px);
-    margin: 0 10px 40px 10px;
+    width: calc(66.66% - 10px);
+    margin: 0 10px 40px 0;
     float: left;
-    height: calc(37.44vw - 11px);
+    height: calc(37.44vw - 11px); /*ENSURE .TEXT IS EQUAL*/
     background-color: gainsboro;
     border-radius: 3px;
     overflow: hidden;
@@ -155,7 +155,7 @@ header ul li img {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 101%;
+    width: 102%;
     height: auto;
     -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
@@ -163,11 +163,17 @@ header ul li img {
 }
 
 .panel.single .hero .text {
+    position: relative;
+    float: left;
+    width: calc(33.33% - 10px);
+    height: calc(37.44vw - 11px); /*ENSURE .IMAGE IS EQUAL*/
+    margin: 0 0 40px 10px;
+}
+
+.panel.single .hero .text .wrapper {
     position: absolute;
-    width: calc(33.33% - 40px);
-    margin: 0 30px 40px 10px;
-    right: 10px;
-    bottom: 0px;
+    bottom: 0;
+    padding-right: 10px
 }
 
 .panel.single .hero .text h1 {
@@ -176,17 +182,17 @@ header ul li img {
 
 .panel > h1 {
     display: inline-block;
-    margin: 40px 20px 20px 40px;
+    margin: 40px 20px 20px 20px;
 }
 
 .panel .featured {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 20px);
     margin: 0 auto;
     overflow: auto;
 }
 
 .panel .featured .item {
-    width: calc(33.33% - 20px); /* WIP:SHOULD BE 20*/
+    width: calc(33.33% - 20px);
     margin: 0 10px 40px 10px;
     overflow: auto;
     float: left;
@@ -230,6 +236,10 @@ header ul li img {
 
 @media (max-width: 800px) {
 
+    header {
+        height: 70px;
+    }
+    
     header ul {
         left: 20px;
     }
@@ -239,7 +249,7 @@ header ul li img {
     }
     
     header ul li img {
-        height: 42px;
+        height: 44px;
     }
     
     .panel.single .hero {
@@ -257,7 +267,22 @@ header ul li img {
     .panel.single .hero .text {
         position: static;
         width: 100%;
+        height: auto; /*ENSURE .IMAGE IS EQUAL*/
         margin: 0 0 40px 0;
+    }
+    
+    .panel.single .hero .text .wrapper {
+        position: static;
+        padding: 0;
+    }
+    
+    .panel .featured .item {
+        width: calc(100% - 20px);
+        margin: 0 10px 30px 10px;
+    }
+    
+    .panel .featured div .wrapper {
+        height: calc(56.25vw - 11px);
     }
     
 }
