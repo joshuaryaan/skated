@@ -88,6 +88,8 @@ header ul {
     list-style: none;
     left: 40px;
     right: auto;
+    display: flex;
+    align-items: center;
 }
 
 header ul:nth-of-type(even) {
@@ -102,6 +104,11 @@ header li {
 
 header ul:nth-of-type(even) li {
     margin: 0 0 0 30px;
+}
+
+header ul img {
+    height: 46px;
+    display: block;
 }
 
 /*INDEX*/
@@ -229,6 +236,10 @@ header ul:nth-of-type(even) li {
 
     header ul:nth-of-type(even) {
         right: 20px;
+    }
+    
+    header ul img {
+        height: 42px;
     }
     
     .panel.single .hero {
