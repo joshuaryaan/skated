@@ -54,18 +54,18 @@ a {
 
 .button {
     color: white;
-    background-color: #333333;
+    background-color: #7A64A6;
     text-align: center;
     padding: 10px 20px;
     border-radius: 3px;
-    box-shadow: -2px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: -2px 2px 4px rgba(112,92,153,0.1);
     transition: background-color 400ms;
     transition: box-shadow 400ms;
 }
 
 .button:hover {
-    background-color: #1A1A1A;
-    box-shadow: -3px 3px 5px rgba(0,0,0,0.15);
+    background-color: #705C99;
+    box-shadow: -2px 2px 4px rgba(112,92,153,0.15);
 }
 
 /*HEADER*/
@@ -92,7 +92,7 @@ header ul {
     align-items: center;
 }
 
-header ul:nth-of-type(even) {
+header ul:last-of-type {
     left: auto;
     right: 20px;
 }
@@ -107,8 +107,33 @@ header ul:nth-of-type(even) li {
 }
 
 header ul li img {
-    height: 48px;
+    height: 50px;
     display: block;
+}
+
+/*MENU*/
+
+.menu {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 50px);
+    top: 0; left: 50px;
+    background-color: #7A64A6;
+    opacity: 0.98;
+    z-index: 100;
+    
+}
+
+.menuFilter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(1px);
+    z-index: 50;
+    opacity: 1;
+    
 }
 
 /*INDEX*/
@@ -132,11 +157,10 @@ header ul li img {
 
 .panel.single .hero .image {
     position: relative;
-    width: calc(66.66% - 10px);
+    width: calc(60% - 10px);
     margin: 0 10px 40px 0;
     float: left;
-    height: calc(37.44vw - 11px); /*ENSURE .TEXT IS EQUAL*/
-    background-color: gainsboro;
+    height: calc(33.75vw - 11px); /*ENSURE .TEXT IS EQUAL*/
     border-radius: 3px;
     overflow: hidden;
 }
@@ -165,8 +189,8 @@ header ul li img {
 .panel.single .hero .text {
     position: relative;
     float: left;
-    width: calc(33.33% - 10px);
-    height: calc(37.44vw - 11px); /*ENSURE .IMAGE IS EQUAL*/
+    width: calc(40% - 10px);
+    height: calc(33.75vw - 11px); /*ENSURE .IMAGE IS EQUAL*/
     margin: 0 0 40px 10px;
 }
 
@@ -202,7 +226,6 @@ header ul li img {
     position: relative;
     width: 100%;
     height: calc(18.7vw - 11px);
-    background-color: white;
     margin-bottom: 8px;
     border-radius: 3px;
     float: left;
@@ -249,7 +272,7 @@ header ul li img {
     }
     
     header ul li img {
-        height: 44px;
+        height: 46px;
     }
     
     .panel.single .hero {
@@ -268,12 +291,16 @@ header ul li img {
         position: static;
         width: 100%;
         height: auto; /*ENSURE .IMAGE IS EQUAL*/
-        margin: 0 0 40px 0;
+        margin: 0 0 20px 0;
     }
     
     .panel.single .hero .text .wrapper {
         position: static;
         padding: 0;
+    }
+    
+    .panel > h1 {
+        margin: 30px 20px 20px 20px;
     }
     
     .panel .featured .item {
