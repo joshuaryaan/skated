@@ -97,7 +97,7 @@ header ul {
     align-items: center;
 }
 
-header ul:last-of-type {
+header ul:nth-of-type(2) {
     left: auto;
     right: 20px;
 }
@@ -108,15 +108,24 @@ header li {
 }
 
 header ul:nth-of-type(even) li {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
 }
 
-header ul li img {
+header ul li .logo {
     height: 50px;
     display: block;
 }
 
 /*MENU*/
+
+.menu-icon {
+    display: none
+}
+
+.menu-icon img  {
+    height: 30px;
+    display: block;
+}
 
 .menu {
     position: fixed;
@@ -163,23 +172,23 @@ header ul li img {
     background-color: #d8d8d8;
 }
 
-.panel.single .hero {
+.panel.single .image-left {
     width: calc(100vw - 40px);
     margin: 0 auto;
     overflow: auto;
 }
 
-.panel.single .hero .image {
+.panel.single .image-left .image {
     position: relative;
     width: calc(60% - 10px);
-    margin: 0 10px 40px 0;
+    margin: 0 10px 20px 0;
     float: left;
     height: calc(33.75vw - 11px); /*ENSURE .TEXT IS EQUAL*/
     border-radius: 3px;
     overflow: hidden;
 }
 
-.panel.single .hero .image .gradient {
+.panel.single .image-left .image .gradient, .panel.single .image-right .image .gradient {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -188,39 +197,75 @@ header ul li img {
     background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.10) 100%);
 }
 
-.panel.single .hero .image img {
+.panel.single .image-left .image img, .panel.single .image-right .image img {
     display: block;
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 102%;
+    width: 106%;
     height: auto;
     -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
 
-.panel.single .hero .text {
+.panel.single .image-left .text {
     position: relative;
     float: left;
-    width: calc(40% - 10px);
+    width: calc(40% - 50px);
     height: calc(33.75vw - 11px); /*ENSURE .IMAGE IS EQUAL*/
-    margin: 0 0 40px 10px;
+    margin: 0 40px 20px 10px;
 }
 
-.panel.single .hero .text .wrapper {
+.panel.single .image-left .text .wrapper, .panel.single .image-right .text .wrapper {
     position: absolute;
     bottom: 0;
     padding-right: 10px
 }
 
-.panel.single .hero .text h1 {
+.panel.single .image-left .text h1, .panel.single .image-right .text h1 {
     margin-bottom: 10px;
 }
 
+/**/
+
+.panel.single .image-right {
+    width: calc(100vw - 40px);
+    margin: 20px auto 0 auto;
+    overflow: auto;
+}
+
+.panel.single .image-right .image {
+    position: relative;
+    width: calc(60% - 10px);
+    margin: 0 0 20px 10px;
+    float: right;
+    height: calc(33.75vw - 11px); /*ENSURE .TEXT IS EQUAL*/
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.panel.single .image-right .text {
+    position: relative;
+    float: left;
+    width: calc(40% - 40px);
+    height: calc(33.75vw - 11px); /*ENSURE .IMAGE IS EQUAL*/
+    margin: 0 40px 20px 0;
+}
+
+.panel.single .image-right .text .wrapper {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    padding-right: 10px
+}
+
+/**/
+
+
 .panel > h1 {
     display: inline-block;
-    margin: 40px 20px 20px 20px;
+    margin: 30px 20px 20px 20px;
 }
 
 .panel .featured {
@@ -289,15 +334,19 @@ header ul li img {
         right: 20px;
     }
     
-    header ul li img {
+    header ul li .logo {
         height: 46px;
     }
     
-    .panel.single .hero {
+    .menu-icon {
+        display: block
+    }
+    
+    .panel.single .image-left, .panel.single .image-right {
         width: calc(100vw - 40px);
     }
 
-    .panel.single .hero .image {
+    .panel.single .image-left .image, .panel.single .image-right .image {
         position: relative;
         width: 100%;
         margin: 0 0 20px 0;
@@ -305,16 +354,17 @@ header ul li img {
         height: calc(56.25vw - 11px);
     }
     
-    .panel.single .hero .text {
+    .panel.single .image-left .text, .panel.single .image-right .text {
         position: static;
         width: 100%;
         height: auto; /*ENSURE .IMAGE IS EQUAL*/
         margin: 0 0 20px 0;
     }
     
-    .panel.single .hero .text .wrapper {
+    .panel.single .image-left .text .wrapper, .panel.single .image-right .text .wrapper {
         position: static;
         padding: 0;
+        margin-top: 0;
     }
     
     .panel > h1 {

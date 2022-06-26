@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".menu").hide();
     $(".menuFilter").hide();
     
-    $( "header .button" ).click(function() {
+    $( "header .menu-icon" ).click(function() {
         $( ".menu" ).fadeIn(300);
         $( ".menuFilter" ).fadeIn(300);
     });
