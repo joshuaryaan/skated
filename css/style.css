@@ -123,7 +123,13 @@ header ul li .logo {
 }
 
 .menu-icon img  {
-    height: 30px;
+    width: 22px;
+    display: block;
+}
+
+.menu-icon.close img  {
+    width: 18px;
+    margin: 0 2px;
     display: block;
 }
 
@@ -186,6 +192,10 @@ header ul li .logo {
     overflow: auto;
 }
 
+.panel.single .image-left.text-top {
+    padding-top: 20px
+}
+
 .panel.single .image-left .image {
     position: relative;
     width: calc(60% - 10px);
@@ -235,11 +245,24 @@ header ul li .logo {
     margin-bottom: 10px;
 }
 
-/**/
+.panel.single .image-left .text.top {
+    position: relative;
+    float: left;
+    width: calc(40% - 50px);
+    height: calc(33.75vw - 11px); /*ENSURE .IMAGE IS EQUAL*/
+    margin: 0 40px 20px 10px;
+}
+
+.panel.single .image-left .text.top .wrapper {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    padding-right: 10px
+}
 
 .panel.single .image-right {
     width: calc(100vw - 40px);
-    margin: 20px auto 0 auto;
+    padding: 20px 20px 0 20px;
     overflow: auto;
 }
 
@@ -267,9 +290,6 @@ header ul li .logo {
     margin-top: 20px;
     padding-right: 10px
 }
-
-/**/
-
 
 .panel > h1 {
     display: inline-block;
@@ -314,6 +334,10 @@ header ul li .logo {
 .panel .featured span {
     float: left;
     width: calc(100% - 60px);
+}
+
+.panel .featured span h3 {
+    color: #62518C;
 }
 
 .panel .featured div a > h4 {
@@ -362,14 +386,14 @@ header ul li .logo {
         height: calc(56.25vw - 11px);
     }
     
-    .panel.single .image-left .text, .panel.single .image-right .text {
+    .panel.single .image-left .text, .panel.single .image-left.text-top .text, .panel.single .image-right .text {
         position: static;
         width: 100%;
         height: auto; /*ENSURE .IMAGE IS EQUAL*/
         margin: 0 0 20px 0;
     }
     
-    .panel.single .image-left .text .wrapper, .panel.single .image-right .text .wrapper {
+    .panel.single .image-left .text .wrapper, .panel.single .image-left.text-top .text .wrapper, .panel.single .image-right .text .wrapper {
         position: static;
         padding: 0;
         margin-top: 0;
