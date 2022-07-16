@@ -50,9 +50,6 @@ strong {
 
 a {
     color: inherit;
-}
-
-a  {
     text-decoration: none;
 }
 
@@ -107,8 +104,17 @@ header li {
     margin: 0 30px 0 0;
 }
 
+header li .desktop {
+    padding: 3px 0 3px 0;
+}
+
 header ul:nth-of-type(even) li {
     margin: 0 0 0 20px;
+}
+
+header ul li.active, header ul li.desktop:hover {
+    padding: 3px 0 2px 0;
+    border-bottom: 1px solid;
 }
 
 header ul li .logo {
@@ -305,7 +311,7 @@ header ul li .logo {
     align-items: center;
     padding: 4px 0;
     margin: 6px 0 1px 0;
-    color: #62518C;
+    color: #8264B3;
     font-weight: 400;
     letter-spacing: 0.7px;
 }
@@ -313,7 +319,7 @@ header ul li .logo {
 .link img {
     height: 13px;
     margin-left: 6px;
-    filter: invert(33%) sepia(38%) saturate(591%) hue-rotate(216deg) brightness(95%) contrast(94%);
+    filter: invert(44%) sepia(9%) saturate(2663%) hue-rotate(221deg) brightness(96%) contrast(90%);
 }
 
 .panel > h2 {
@@ -393,10 +399,58 @@ article section .right {
     margin: 0 40px 20px 10px;
 }
 
+article section .right *  {
+    max-width: 46em;
+}
+
+article section .full {
+    position: relative;
+    width: 100%;
+    margin: 0 0 20px 0;
+    float: left;
+}
+
+article section .full .wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(28.1vw - 11px);
+    border-radius: 3px;
+    float: left;
+    overflow: hidden;
+}
+
+article section .full .wrapper img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.mobile {
+    display: none;
+}
+
 @media (max-width: 800px) {
+
+    p {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
 
     .desktop {
         display: none;
+    }
+    
+    .mobile {
+        display: block;
     }
     
     header {
@@ -459,7 +513,7 @@ article section .right {
     
     article section .left {
         position: relative;
-        width: calc(30% - 5px);
+        width: calc(33% - 5px);
         margin: 0 5px 20px 0;
         float: left;
     }
@@ -467,8 +521,8 @@ article section .right {
     article section .right {
         position: relative;
         float: left;
-        width: calc(70% - 15px);
-        margin: 0 0 20px 15px;
+        width: calc(67% - 10px);
+        margin: 0 0 20px 10px;
     }
     
 }
