@@ -388,6 +388,10 @@ article {
     overflow: auto;
 }
 
+article.body {
+    padding-bottom: 20px;
+}
+
 article section {
     overflow: auto;
 }
@@ -406,7 +410,7 @@ article section .right {
     margin: 0 0 0 10px;
 }
 
-article.body section .right p  {
+article.body section .right p:not(.right .link p)  {
     max-width: 46em;
     margin-bottom: 20px
 }
@@ -462,7 +466,6 @@ article section .right .wrapper img {
 }
 
 footer {
-    background-color: #D8D8D8;
     background-color: #88BFBB;
     color: white;
 }
