@@ -6,6 +6,7 @@ body {
     letter-spacing: 0.6px;
     padding-top: 80px;
     overflow: auto;
+    background-color: #91CCC7;
 }
 
 p {
@@ -79,6 +80,7 @@ header {
     top: 0;
     font-size: 13px;
     z-index: 10;
+    background-color: white;
 }
 
 header ul {
@@ -160,17 +162,24 @@ header ul li .logo {
 
 .menu .menu-list {
     list-style: none;
-    margin: 20px 20px;
+    margin: 0 20px;
     padding: 0;
 }
 
 .menu .menu-list li {
-    margin-bottom: 40px;
+    margin: 20px 0;
     position: relative;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu .menu-list li h2 {
     line-height:inherit;
+}
+
+.menu .menu-list li.active h2 {
+    font-weight: 400
 }
 
 .menu .menu-list li .chevron {
@@ -185,12 +194,13 @@ header ul li .logo {
 .panel {
     position: relative;
     width: 100%;
-    overflow: auto;
-/*    padding: 40px 0 60px 0;*/
+    /* overflow: auto; */
+    overflow-x: hidden;
+    background-color: white;
 }
 
 .panel.grey {
-    background-color: #d8d8d8;
+    background-color: #EBEBEB;
 }
 
 .panel.single .image-left {
@@ -379,6 +389,7 @@ article {
     width: calc(100vw - 40px);
     padding: 0 20px 0 20px;
     overflow: auto;
+    background-color: white;
 }
 
 article section {
@@ -438,6 +449,7 @@ article section .right .wrapper {
     border-radius: 3px;
     float: left;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 article section .right .wrapper img {
@@ -450,6 +462,12 @@ article section .right .wrapper img {
     -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
+}
+
+footer {
+    min-height: 120px;
+    background-color: #D8D8D8;
+    background-color: #91CCC7;
 }
 
 .mobile {
