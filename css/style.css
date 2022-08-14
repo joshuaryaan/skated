@@ -16,10 +16,10 @@ p {
 
 h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 300;
     line-height: 1.6;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
 }
 
 h2 {
@@ -329,6 +329,10 @@ header ul li .logo {
     filter: invert(44%) sepia(9%) saturate(2663%) hue-rotate(221deg) brightness(96%) contrast(90%);
 }
 
+.link-bank {
+    margin-bottom: 20px;
+}
+
 .panel > h2 {
     display: inline-block;
     margin: 30px 20px 20px 20px;
@@ -398,8 +402,8 @@ article section {
 
 article section .left {
     position: relative;
-    width: calc(40% - 10px);
-    margin: 0 10px 20px 0;
+    width: calc(40% - 20px);
+    margin: 0 20px 20px 0;
     float: left;
 }
 
@@ -410,7 +414,11 @@ article section .right {
     margin: 0 0 0 10px;
 }
 
-article.body section .right p:not(.right .link p)  {
+article.body section .right h2 {
+    margin-bottom: 10px;
+}
+
+article.body section .right p:not(.right .link p), article.body section .right h2  {
     max-width: 46em;
     margin-bottom: 20px
 }
