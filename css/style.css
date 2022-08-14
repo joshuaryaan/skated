@@ -601,29 +601,36 @@ footer .right .link p:hover {
     
     article section .left {
         position: relative;
-        width: calc(33% - 5px);
-        margin: 0 5px 20px 0;
+        width: 100%;
+        margin: 0 0 20px 0;
         float: left;
+    }
+    
+    footer article section .left {
+        margin: 0 0 0 0;
     }
 
     article section .right {
         position: relative;
         float: left;
-        width: calc(67% - 10px);
-        margin: 0 0 20px 10px;
+        width: 100%;
+        margin: 0 0 0 0;
     }
     
     article section .full .wrapper {
         height: calc(37.1vw - 11px);
     }
     
-    footer {
-        padding-bottom: 20px;
+    article section .right .wrapper {
+        height: calc(56.25vw - 31px);
     }
     
-    footer article section .left, footer article section .right {
-        width: 100%;
-        margin: 0 0 00px 0;
+    article section .right .wrapper img {
+        width: 104%
+    }
+    
+    footer {
+        padding-bottom: 20px;
     }
     
     footer article .left h2, footer article .left p, footer .link {
