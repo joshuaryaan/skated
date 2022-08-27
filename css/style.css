@@ -417,10 +417,11 @@ article section .right {
 }
 
 article.body section .right h2 {
-    margin-bottom: 10px;
+    max-width: 46em;    
+    margin-bottom: 4px;
 }
 
-article.body section .right p:not(.right .link p), article.body section .right h2  {
+article.body section .right p:not(.right .link p)  {
     max-width: 46em;
     margin-bottom: 20px
 }
