@@ -486,7 +486,7 @@ footer article {
     padding-bottom: 20px;
 }
 
-footer article .left h2, footer article .left p {
+footer article .left h2, footer article .right h2, footer article .left p {
     text-shadow: 0px 0px 2px rgba(0,0,0,0.08);
     display: inline-block;
     float: left;
@@ -523,12 +523,11 @@ footer .right .link p:hover {
 }
 
 footer .link.sponsor {
-    height: 24px;
     margin-top:2px
 }
 
 footer .link.sponsor img {
-    height: 22px;
+    height: 20px;
     filter: brightness(0) invert(1);
 }
 
@@ -648,6 +647,18 @@ footer .link.sponsor img {
     
     footer article .left h2, footer article .left p, footer .link {
         padding: 4px 6px 4px 0;
+    }
+    
+    footer article .right h2 {
+        margin-bottom: 2px;
+    }
+    
+    footer article .left .sponsor {
+        margin-top: 40px;
+    }
+    
+    footer article .right {
+        margin-top: 40px;
     }
     
 }
