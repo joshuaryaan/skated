@@ -390,7 +390,6 @@ header ul li .logo {
 article {
     width: calc(100% - 40px);
     padding: 0 20px 0 20px;
-    overflow: auto;
 }
 
 article.body {
@@ -489,13 +488,23 @@ form input, form textarea {
     display: block;
     margin-bottom: 20px;
     box-sizing: border-box;
-    padding: 6px 6px;
+    padding: 8px 6px;
     width: 100%;
     border: solid 1px lightgray;
     border-radius: 3px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: 0.2px;
+}
+
+form input:focus { 
+    outline: none !important;
+    border-color: #88BFBB;
+}
+
+form textarea:focus { 
+    outline: none !important;
+    border-color: #88BFBB;
 }
 
 form textarea {
