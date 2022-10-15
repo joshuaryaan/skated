@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: sans-serif;
     font-weight: 300;
     font-size: 12px;
     letter-spacing: 0.6px;
@@ -475,6 +474,57 @@ article section .right .wrapper img {
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    display: block;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 6px 6px;
+    width: 100%;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+form textarea {
+   resize: vertical;
+}
+
+form button {
+    color: white;
+    background-color: #7A64A6;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 3px;
+    box-shadow: -2px 2px 4px rgba(112,92,153,0.1);
+    transition: background-color 400ms;
+    transition: box-shadow 400ms;
+    text-decoration: none;
+    border-width: 0;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+}
+
+form button:hover {
+    background-color: #705C99;
+    box-shadow: -2px 2px 4px rgba(112,92,153,0.15);
+}
+
 
 footer {
     background-color: #88BFBB;
