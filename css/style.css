@@ -26,7 +26,7 @@ h1 {
 h2 {
     margin: 0;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -520,6 +520,16 @@ footer .right .link p {
 footer .right .link p:hover {
     padding-bottom: 0px;
     border-bottom: 1px solid white;
+}
+
+footer .link.sponsor {
+    height: 24px;
+    margin-top:2px
+}
+
+footer .link.sponsor img {
+    height: 22px;
+    filter: brightness(0) invert(1);
 }
 
 .mobile {
