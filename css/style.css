@@ -402,8 +402,11 @@ article.body section .right h2 {
     margin-bottom: 4px;
 }
 
-article.body section .right {
+article.body section .right p{
     max-width: 44em;
+}
+
+article.body section .right {
     margin-bottom: 20px
 }
 
