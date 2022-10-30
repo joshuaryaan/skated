@@ -527,18 +527,36 @@ form button:hover {
 footer {
     background-color: #88BFBB;
     color: white;
+    overflow: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-footer article {
+footer .left, footer .center, footer .right {
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    float: left;
 }
 
-footer article h2 {
+footer .left {
+    width: calc(34% - 20px);
+    margin: 0 20px 0 0;
+}
+
+footer .center {
+    width: calc(26% - 20px);
+    margin-right: 20px;
+}
+
+footer .right {
+    width: calc(40%);
+}
+
+footer h2 {
     font-size: 19px;
 }
 
-footer article .left h2, footer article .right h2, footer article .left p {
+footer h2, footer h2, footer p {
     text-shadow: 0px 0px 2px rgba(0,0,0,0.08);
     display: inline-block;
     float: left;
@@ -561,30 +579,35 @@ footer .link img {
     filter: invert(92%) sepia(51%) saturate(0%) hue-rotate(216deg) brightness(106%) contrast(100%);
 }
 
-footer .link p {
-    padding: 0;
-}
-
-footer .right .link p {
-    padding-bottom: 1px;
-}
-
-footer .right .link p:hover {
-    padding-bottom: 0px;
-    border-bottom: 1px solid white;
-}
-
 footer h2 {
     margin-bottom: 10px;
 }
 
-footer .link.sponsor {
-    
+footer .link p {
+    padding: 0;
+}
+
+footer .center .link p {
+    padding-bottom: 1px;
+}
+
+footer .center .link p:hover {
+    padding-bottom: 0px;
+    border-bottom: 1px solid white;
+}
+
+footer .right a+p {
+    padding-bottom: 0;
+}
+
+footer .right p~a p {
+    padding-top: 0
 }
 
 footer .link.sponsor img {
-    height: 20px;
+    height: 19px;
     filter: brightness(0) invert(1);
+    margin-bottom: 10px;
 }
 
 .mobile {
@@ -665,10 +688,6 @@ footer .link.sponsor img {
         margin: 0 0 10px 0;
         float: left;
     }
-    
-    footer article section .left {
-        margin: 0 0 0 0;
-    }
 
     article section .right {
         position: relative;
@@ -693,25 +712,23 @@ footer .link.sponsor img {
         width: 104%
     }
     
-    footer {
-        padding-bottom: 20px;
+    footer .left {
+        width: calc(100% - 0px);
+        padding: 30px 0 20px 0;
+        margin: 0;
     }
     
-    footer article .left h2, footer article .left p, footer .link {
-        padding: 4px 6px 4px 0;
+    footer .right {
+        width: calc(100% - 0px);
+        padding: 20px 0 30px 0;
+        margin: 0;
     }
     
-    footer h2 {
-        margin-bottom: 8px;
+    footer .center {
+        display: none;
     }
     
-    footer article .left .sponsor {
-        margin-top: 20px;
-    }
-    
-    footer article .right {
-        margin-top: 20px;
-    }
+
     
 }
 
