@@ -227,6 +227,10 @@ header ul li .logo {
     background-color: #EBEBEB;
 }
 
+.wrapper:not(.panel .wrapper) {
+    background-color: rgba( 158, 201, 199, 0.85);
+}
+
 .panel.single .image-left {
     width: calc(100% - 40px);
     padding: 20px 20px 0 20px;
@@ -255,7 +259,7 @@ header ul li .logo {
     box-shadow: 0 2px 6px rgba(112,92,153,0.06);
 }
 
-.panel.single .image-left .image .gradient, .panel.single .image-right .image .gradient, .panel.single .image-left .image .gradient {
+.panel.single .image-left .image .gradient, .panel.single .image-right .image .gradient, .panel.single .image-left .image .gradient, .wrapper .gradient {
     width: 100%;
     height: 100%;
     position: absolute;
