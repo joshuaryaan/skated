@@ -96,6 +96,10 @@ p a {
     box-shadow: -2px 2px 4px rgba(112,92,153,0.1);
 }
 
+.buffer {
+    height: 200px
+}
+
 /*HEADER*/
 
 header {
