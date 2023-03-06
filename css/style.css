@@ -759,9 +759,13 @@ footer .link.sponsor img {
     h3 {
         font-size: 18px;
     }
-    
-    header {
-        font-size: 14px;
+
+    header ul {
+        left: calc(5vw + 20px);
+    }
+
+    header ul:nth-of-type(2) {
+        right: calc(5vw + 20px);
     }
     
     .panel {
@@ -773,6 +777,10 @@ footer .link.sponsor img {
     article {
         width: calc(100% - 10vw);
         padding: 0 5vw 0 5vw;
+    }
+    
+    article.body section {
+        padding: 0 20px
     }
     
     .button, form button {
