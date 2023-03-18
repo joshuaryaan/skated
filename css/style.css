@@ -12,8 +12,8 @@ body {
 p {
     margin: 0;
     font-size: 14px;
-    line-height: 1.9;
-    letter-spacing: 0.8px
+    line-height: 2.1;
+    letter-spacing: 0.9px
 }
 
 h1 {
@@ -159,13 +159,13 @@ header ul li .logo {
 }
 
 .menu-icon img  {
-    width: 22px;
+    width: 26px;
     display: block;
 }
 
 .menu-icon.close img  {
     width: 18px;
-    margin: 0 2px;
+    margin: 0 4px;
     display: block;
 }
 
@@ -295,7 +295,8 @@ header ul li .logo {
 .panel.single .image-left .text .wrapper, .panel.single .image-right .text .wrapper {
     position: absolute;
     bottom: 0;
-    padding-right: 10px
+    padding-right: 10px;
+    max-width: 35em;
 }
 
 .panel.single .image-left .text h2, .panel.single .image-right .text h2 {
@@ -531,6 +532,11 @@ form button:hover {
     box-shadow: -2px 2px 4px rgba(112,92,153,0.15);
 }
 
+h1 img {
+    height: 26px;
+    margin: 0 0 4px 10px;
+    vertical-align: middle;
+}
 
 footer {
     background-color: #88BFBB;
@@ -568,8 +574,11 @@ footer h2, footer h2, footer p {
     text-shadow: 0px 0px 2px rgba(0,0,0,0.08);
     display: inline-block;
     float: left;
-    clear: left;
     padding: 2px 6px 2px 0;
+}
+
+footer p {
+    clear: left;
 }
 
 footer .link {
@@ -609,13 +618,18 @@ footer .right a+p {
 }
 
 footer .right p~a p {
-    padding-top: 0
+    padding-top: 0;
+    line-height: 1.6
+}
+
+footer .link.sponsor {
+    margin-bottom: 10px;
 }
 
 footer .link.sponsor img {
     height: 19px;
     filter: brightness(0) invert(1);
-    margin-bottom: 10px;
+    float: left; 
 }
 
 .mobile {
